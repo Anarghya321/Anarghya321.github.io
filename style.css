@@ -51,10 +51,14 @@ body {
     background-color: #656;
 }
 
+#fb:hover {
+    background-color: #336;
+}
+
 #regp small {
     margin-top: 0;
     text-transform: uppercase;
-    font-size: 40%;
+    font-size: 60%;
 }
 
 #website small {
@@ -64,24 +68,27 @@ body {
     font-size: 40%;
 }
 
+#fb small {
+    margin-top: 0;
+    margin: 0;
+    text-transform: lowercase;
+    font-size: 40%;
+}
+
 .foot {
     width: 100%;
     background-color: #111;
     color: #fff;
     text-align: center;
     font-family: 'Raleway';
-    height: 120%;
+    text-decoration-line: overline;
+    height: 100%;
 }
 
 .foot > h1 {
     margin-left: 5%;
     margin-right: 5%;
-    text-align: left;
-}
-
-.foot > h2 {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-top: 5%;
     text-align: left;
 }
 
@@ -102,16 +109,19 @@ body {
 .foot a:hover {
     color: #789;
 }
+
 #content {
     text-align: center;
     font-size: 200%;
     font-family: 'Amatic SC';
     height: 120%;
-    margin-bottom: 5%;
+    margin-bottom: 0%;
+    background-color: rgba(0,0,0,0.4);
 }
 
-#content #late:hover, #content > p:hover {
-    color: #789;
+#content span {
+    font-family: 'Raleway';
+    font-stretch: extra-expanded;
 }
 
 #content > h1 {
@@ -121,7 +131,7 @@ body {
 }
 
 #content > p {
-    margin: 5%;
+    margin: 10%;
     margin-top: 0%;
 }
 
@@ -130,7 +140,7 @@ body {
     border-radius: 30px;
 }
 
-.foot #githublogo2 {
+#navbar #fblogo {
     width: 20px;
     border-radius: 20px;
 }
