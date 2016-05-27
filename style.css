@@ -119,9 +119,14 @@ body {
     background-color: rgba(0,0,0,0.4);
 }
 
-#content span {
+#content > span {
     font-family: 'Raleway';
     font-stretch: extra-expanded;
+}
+
+#content #img img {
+    background-color: rgba(100%, 100%, 100%, 0.5);
+    border-radius: 100%;
 }
 
 #content > h1 {
