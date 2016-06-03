@@ -1,23 +1,25 @@
-var main = function () {
-    var text = "You're Late!                           ";
-    var counter = 0;
-    var times = 0;
-    var addText = function () {
-        if(times === 2) {
-            $('#xterm').html(text);
-            return;
-        }
-        if(counter === text.length) {
-            $('#xterm').html('');
-            counter = 0;
-            times = times + 1;
+var TextFlick = function (text, selector) {
+    this.text = text + '                    ';
+    this.selector = selector;
+    this.counter = 0;
+    this.times = 0;
+    this.addText = function () {
+        if(this.counter === this.text.length) {
+            if(this.times === 2) return;
+            else {
+                document.querySelector(this.selector).innerHTML = '&nbsp;';
+                this.counter = 0;
+                this.times = this.times + 1;
+            }
         }
         else {
-            $('#xterm').append(text.charAt(counter));
-            counter = counter + 1;
+            document.querySelector(this.selector).innerHTML = document.querySelector(this.selector).innerHTML + this.text.charAt(this.counter);
+            this.counter = this.counter + 1;
         }
-    };
-    $('#xterm').html('');
-    setInterval(addText, 150);
+    }
+    document.querySelector(this.selector).innerHTML = '&nbsp;';
 };
-$(document).ready(main);
+var texy = new TextFlick('You\'re Late!', '#xterm');
+setInterval(function () {
+    texy.addText();
+}, 150);
