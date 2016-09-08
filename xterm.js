@@ -19,7 +19,7 @@ var TextFlick = function (text, selector) {
     }
     document.querySelector(this.selector).innerHTML = '&nbsp;';
 };
-var texy = new TextFlick('You\'re Late!', '#xterm');
+var texy = new TextFlick('Website under construction!', '#xterm');
 setInterval(function () {
     texy.addText();
 }, 150);
