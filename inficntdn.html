@@ -64,7 +64,7 @@ if(window.oc.remainingTimeAtStartTime === undefined)
 	var t2 = new Date();
 	var dif = t1.getTime() - t2.getTime();
 
-	var s = dif / 1000;
+	var s = (dif / 1000) - 2678400;
 	window.oc.remainingTimeAtStartTime = s;
 	// window.oc.remainingTimeAtStartTime=829475;
 }
