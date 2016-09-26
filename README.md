@@ -1,3 +1,4 @@
-##Infinnovation'16 Website Coming Soon
-# [www.Infinnovation.co](http://www.Infinnovation.co)
-Source code of the Infinnovation'16 website.
+##Infinnovation'16 Website
+# [www.infinnovation.co](http://www.infinnovation.co)
+Source code of the infinnovation'16 website.
+Built using www.froont.com
